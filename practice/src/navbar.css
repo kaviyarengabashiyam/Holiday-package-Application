@@ -1,0 +1,11 @@
+.bt {
+  padding: 10px 20px;
+  background: purple;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.bt::after {
+  content: " →"; 
+}

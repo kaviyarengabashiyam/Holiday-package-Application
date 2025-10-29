@@ -1,0 +1,45 @@
+
+/* ✅ Make layout flexible for all pages */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ✅ Common responsive containers */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  width: 100%;
+}
+
+/* ✅ Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ✅ Responsive text and layout breakpoints */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+}
